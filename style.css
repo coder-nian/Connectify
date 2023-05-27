@@ -1,0 +1,460 @@
+/* styles.css */
+
+
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+body {
+  background-color: #000;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.5s;
+  background-color: #fff;
+  color: #000;
+  position: relative;
+  margin: 0; /* Add margin 0 to reset default body margin */
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.slider {
+  border-radius: 70px;
+}
+
+.container {
+  background: #136a8a;
+background: -webkit-linear-gradient(to right, #267871, #136a8a);
+background: linear-gradient(to right, #267871, #136a8a); 
+
+  backdrop-filter: blur(5px);
+  /* background-image: url(bg.jpg); */
+  max-width: 400px;
+  margin: 80px auto; /* Adjust the margin value to set the distance from the top */
+  padding: 40px;
+  border: 1px solid #444;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.5s;
+  background-color: #fff;
+}
+.container:hover{
+  transform:scale(1);
+  background:-webkit-linear-gradient(to right, #267871, #136a8a);
+  box-shadow: 2px 2px 2px #000;
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container label {
+  display: block;
+  /* font-weight: bold; */
+  margin-bottom: 10px;
+}
+
+.container input[type="text"],
+.container input[type="password"] {
+  width: 100%;
+  margin: 10;
+  padding: 5px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  transition: background-color 0.5s, border-color 0.5s, color 0.5s;
+  background-color: #fff;
+  color: #000;
+  align-items: center;
+  right: 10px;
+}
+
+/* .container input[type="text"]:focus,
+.container input[type="password"]:focus {
+  background-color: #f2f2f2;
+  border-color: #000;
+} */
+
+.container input[type="checkbox"] {
+  margin-bottom: 20px;
+  display: none;
+}
+
+.container input[type="checkbox"] + .slider {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 25px;
+  bottom: 2px;
+  background-color: #0c1150;
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+
+.container input[type="checkbox"] + .slider:before {
+  position: absolute;
+  content: "";
+  height: 19px;
+  width: 19px;
+  border-radius: 50%;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  transition: transform 0.4s;
+}
+
+.container input[type="checkbox"]:checked + .slider {
+  background-color: #6a9486;
+}
+
+.container input[type="checkbox"]:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.container input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.container input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.container .fpasswd {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.container .fpasswd a {
+  color:blue;
+  text-decoration: underline;
+}
+
+.dark-theme {
+  background-color: #000;
+  color: #fff;
+}
+
+.dark-theme .container {
+background: #0F2027;
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16
+
+  /* background-color: #222; */
+}
+
+.dark-theme .container:hover{
+  transform:scale(1);
+  background:-webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  box-shadow: 2px 2px 2px #155748;
+}
+
+.dark-theme input[type="text"],
+.dark-theme input[type="password"] {
+  background-color: #333;
+  color: #fff;
+  border-color: #000;
+}
+.dark-theme input[type="submit"]{
+  background-color: #6b88e4;
+}
+.dark-theme input[type="submit"]:hover {
+  background-color: #0f6489;
+}
+.dark-theme .container .fpasswd a{
+  
+  color: rgb(81, 211, 209);
+}
+@media only screen and (max-width: 600px) {
+  /* Apply responsive styles for screens up to 600px */
+  .container {
+    padding: 20px;
+    max-width: 70%; /* Set max-width to 100% for smaller screens */
+  }
+}/* styles.css */
+
+body {
+  background-color: #000;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.5s;
+  background-color: #fff;
+  color: #000;
+  position: relative;
+  margin: 0; /* Add margin 0 to reset default body margin */
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.slider {
+  border-radius: 70px;
+}
+
+.container {
+  background: #136a8a;
+background: -webkit-linear-gradient(to right, #267871, #136a8a);
+background: linear-gradient(to right, #267871, #136a8a); 
+
+  backdrop-filter: blur(5px);
+  /* background-image: url(bg.jpg); */
+  max-width: 400px;
+  margin: 80px auto; /* Adjust the margin value to set the distance from the top */
+  padding: 40px;
+  border: 1px solid #444;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.5s;
+  background-color: #fff;
+}
+.container:hover{
+  transform:scale(1);
+  background:-webkit-linear-gradient(to right, #267871, #136a8a);;
+  box-shadow: 2px 2px 2px #000;
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container label {
+  display: block;
+  /* font-weight: bold; */
+  margin-bottom: 10px;
+}
+
+.container input[type="text"],
+.container input[type="password"] {
+  width: 100%;
+  margin: 10;
+  padding: 5px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  transition: background-color 0.5s, border-color 0.5s, color 0.5s;
+  background-color: #fff;
+  color: #000;
+  align-items: center;
+  right: 10px;
+}
+
+/* .container input[type="text"]:focus,
+.container input[type="password"]:focus {
+  background-color: #f2f2f2;
+  border-color: #000;
+} */
+
+.container input[type="checkbox"] {
+  margin-bottom: 20px;
+  display: none;
+}
+
+.container input[type="checkbox"] + .slider {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 25px;
+  bottom: 2px;
+  background-color: #0c1150;
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+
+.container input[type="checkbox"] + .slider:before {
+  position: absolute;
+  content: "";
+  height: 19px;
+  width: 19px;
+  border-radius: 50%;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  transition: transform 0.4s;
+}
+
+.container input[type="checkbox"]:checked + .slider {
+  background-color: #6a9486;
+}
+
+.container input[type="checkbox"]:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.container input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.container input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.container .fpasswd {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.container .fpasswd a {
+  color: #0ed0d3;
+  text-decoration: underline;
+}
+
+.dark-theme {
+  background-color: #000;
+  color: #fff;
+}
+
+.dark-theme .container {
+background: #0F2027;
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16
+
+  /* background-color: #222; */
+}
+
+.dark-theme .container:hover{
+  transform:scale(1);
+  background:-webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  box-shadow: 2px 2px 2px #155748;
+}
+
+.dark-theme input[type="text"],
+.dark-theme input[type="password"] {
+  background-color: #333;
+  color: #fff;
+  border-color: #000;
+}
+.dark-theme input[type="submit"]{
+  background-color: #6b88e4;
+}
+.dark-theme input[type="submit"]:hover {
+  background-color: #0f6489;
+}
+.dark-theme .container .fpasswd a{
+  
+  color: rgb(81, 211, 209);
+}
+@media only screen and (max-width: 600px) {
+  /* Apply responsive styles for screens up to 600px */
+  .container {
+    padding: 20px;
+    max-width: 70%; /* Set max-width to 100% for smaller screens */
+  }
+}
+
+/* New Styles */
+
+/* Add your new CSS rules below this comment */
