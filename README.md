@@ -26,3 +26,5 @@ If you would like to contribute to Connectify, please fork the repository and su
 
 # License
 Connectify is licensed under the MIT License.
+
+> *This project is under-development.*
